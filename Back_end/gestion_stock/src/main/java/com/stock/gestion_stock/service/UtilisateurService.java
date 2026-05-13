@@ -61,7 +61,7 @@ public class UtilisateurService {
         utilisateur.setNom(dto.getNom());
         utilisateur.setPrenom(dto.getPrenom());
         utilisateur.setRole(Role.valueOf(dto.getRole()));
-        utilisateur.setActif(dto.isActif());
+        utilisateur.setActif(dto.getActif() != null ? dto.getActif() : utilisateur.isActif());
 
         Utilisateur updated = utilisateurRepository.save(utilisateur);
         return toDTO(updated);

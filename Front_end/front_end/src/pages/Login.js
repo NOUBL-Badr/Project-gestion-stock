@@ -2,6 +2,8 @@ import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 
+import logo from '../icons and images/logo.jpeg';
+
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -23,10 +25,12 @@ const Login = () => {
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', backgroundColor: 'var(--bg-color)' }}>
       <div className="card" style={{ width: '100%', maxWidth: '400px' }}>
-        <h2 style={{ textAlign: 'center', color: 'var(--primary-color)' }}>Connexion</h2>
-        <p style={{ textAlign: 'center', color: 'var(--text-light)', marginBottom: '1.5rem' }}>Système de Gestion de Stock</p>
+        <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+          <img src={logo} alt="Stock Solutions" style={{ width: '160px', height: 'auto', marginBottom: '0.75rem' }} />
+          <p style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>Connectez-vous à votre compte</p>
+        </div>
         
-        {error && <div className="text-danger mb-3" style={{ textAlign: 'center', fontSize: '0.9rem' }}>{error}</div>}
+        {error && <div className="form-error" style={{ textAlign: 'center' }}>{error}</div>}
         
         <form onSubmit={handleSubmit}>
           <div className="form-group">
@@ -37,6 +41,7 @@ const Login = () => {
               className="form-control"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
+              placeholder="Entrez votre nom d'utilisateur"
               required
             />
           </div>
@@ -49,11 +54,12 @@ const Login = () => {
               className="form-control"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              placeholder="Entrez votre mot de passe"
               required
             />
           </div>
           
-          <button type="submit" className="btn btn-primary" style={{ width: '100%', marginTop: '1rem' }}>
+          <button type="submit" className="btn btn-primary" style={{ width: '100%', marginTop: '1rem', padding: '0.75rem' }}>
             Se connecter
           </button>
         </form>

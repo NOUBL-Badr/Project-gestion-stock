@@ -17,5 +17,5 @@ public class ProduitDTO {
     private Integer seuilAlerte;
     private Long fournisseurId;
     private String fournisseurNom;
-    private boolean stockFaible;
+    private Boolean stockFaible;
 }

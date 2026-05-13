@@ -14,5 +14,5 @@ public class FournisseurDTO {
     private String email;
     private String telephone;
     private String adresse;
-    private int nombreProduits;
+    private Integer nombreProduits;
 }
