@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-/* ═══════════════════════════════════════════════════════
-   LIGHT THEME (default)
-   ═══════════════════════════════════════════════════════ */
+
 :root {
   --primary-color: #2563eb;
   --primary-hover: #1d4ed8;
@@ -31,9 +29,7 @@
   --transition: all 0.2s ease-in-out;
 }
 
-/* ═══════════════════════════════════════════════════════
-   DARK THEME
-   ═══════════════════════════════════════════════════════ */
+
 [data-theme="dark"] {
   --primary-color: #3b82f6;
   --primary-hover: #2563eb;
