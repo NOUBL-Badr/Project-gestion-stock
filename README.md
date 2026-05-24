@@ -3,7 +3,7 @@ projet simple pour la gestion du stock front end REACT javascript et back end SP
 
 # Pour que le projet marche sur votre machine locale il faut suivre les instructions suivantes:
 #### Le nom du shèma utilisé est gestion_stock
-#### Pour MySQL, utiliser localhost:3306 username root et mot de passe Noubl 
+#### Pour MySQL, utiliser localhost:3306 username root et mot de passe pour moi est Noubl changer le pour qu'il doit identique à le votre
 #### Commande pour exécuter l'application SPRING BOOT: .\mvnw spring-boot:run
 #### Ouvrez un nouveau terminal pour l'application REACT
 #### Dans ce dernier changer l'emplacement vers le projet et executer cette commande: npm start
