@@ -636,7 +636,7 @@ tr:hover {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary-color), #8b5cf6);
+  background: var(--primary-color);
   color: white;
   display: flex;
   align-items: center;
@@ -645,6 +645,12 @@ tr:hover {
   font-weight: 700;
   text-transform: uppercase;
   flex-shrink: 0;
+  transition: var(--transition);
+}
+
+[data-theme="dark"] .user-avatar {
+  background: white;
+  color: var(--primary-color);
 }
 
 .user-details {
